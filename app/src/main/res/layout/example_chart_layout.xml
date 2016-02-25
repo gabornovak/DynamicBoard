@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Marketing"
+        android:textColor="#222"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_below="@id/title"
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="123.4M"
+        android:textColor="#111"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_below="@id/value"
+        android:id="@+id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Marketing"
+        android:textColor="#727272"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_below="@id/subTitle"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/chart1" />
+</RelativeLayout>
