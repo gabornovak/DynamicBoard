@@ -2,9 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f9f9f9">
+    android:background="@color/card_background_color">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="List"
+        android:textColor="@color/card_header_text_color"
+        android:textSize="12sp"/>
 
     <ListView
+        android:layout_below="@id/header"
         android:id="@+id/list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +24,7 @@
         android:id="@+id/buttons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#f9f9f9"
+        android:background="@color/card_background_color"
         android:layout_alignParentBottom="true" >
 
         <Button
